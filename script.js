@@ -175,16 +175,16 @@ function CheckReach(){
 function GameCheck(){
     if(circle==true){
         if(turn==1){
-            alert("プレイヤーの勝利")
+            document.getElementById("result").innerHTML = "プレイヤーの勝利";
         }else{
-            alert("AIの勝利");
+            document.getElementById("result").innerHTML = "AIの勝利";
         }
         return true;
     }else if(cross==true){
         if(turn==2){
-            alert("プレイヤーの勝利")
+            document.getElementById("result").innerHTML = "プレイヤーの勝利";
         }else{
-            alert("AIの勝利");
+            document.getElementById("result").innerHTML = "AIの勝利";
         }
         return true;
     }else{
@@ -195,13 +195,14 @@ function GameCheck(){
                 }
             }
         }
-        alert("引き分け");
+        document.getElementById("result").innerHTML = "引き分け";
         return true;
     }
 }
 
 //盤面をリセットする
 function reset(){
+    document.getElementById("result").innerHTML = "";
     for(let i = 0 ; i < 3 ; i++){
         for(let j = 0 ; j < 3 ; j++){
             board[i][j] = 0;

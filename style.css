@@ -31,3 +31,8 @@ p{
     color:gray;
     cursor: pointer;
 }
+
+#result{
+    font-size: 48px;
+    text-align: center;
+}
