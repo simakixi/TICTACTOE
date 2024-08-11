@@ -31,6 +31,7 @@ for( let i = 0 ; i < 3 ; i++ ){
 
 //テーブルをクリックしたときの処理
 function click(){
+    //ゲームが終了してる場合は実行しない
     if(!player)return;
     if(circle||cross)return;
     player = false;
